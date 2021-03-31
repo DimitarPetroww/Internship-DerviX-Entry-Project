@@ -9,11 +9,18 @@
 
 	<link rel="stylesheet" href="./css/master.css">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<style>
+		h1{
+			display: inline-block;
+			margin: 10px;
+		}
+	</style>
 </head>
 <body>
 	<div class="site-wrapper">
 		<header class="site-header">
 			<h1 class="site-title"><a href="./index.php">Job Offers</a></h1>
+			<h1 class="site-title"><a href="./create.php">Create Job</a></h1>
 		</header>
         <?php
         echo '<ul class="jobs-listing">';

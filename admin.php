@@ -13,7 +13,8 @@
 <body>
 	<div class="site-wrapper">
 		<header class="site-header">
-			<h1 class="site-title"><a href="#">Job Offers</a></h1>
+			<h1 class="site-title"><a href="./index.php">Job Offers</a></h1>
+			<h1 class="site-title"><a href="./create.php">Create Job</a></h1>
 		</header>
 
 		<ul class="jobs-listing">

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="./css/master.css">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        #edit-form {
+        #create-form {
             max-width: 500px;
             margin: 2rem auto;
             border: 2px solid blue;
@@ -23,7 +23,7 @@
             display: block;
             width: 100%
         }
-        #editBtn {
+        #createBtn {
             border: 0;
             background: #3c71fe;
             padding: .5rem;
@@ -40,28 +40,19 @@
 	<div class="site-wrapper">
 		<header class="site-header">
 			<h1 class="site-title"><a href="./index.php">Job Offers</a></h1>
-            <h1 class="site-title"><a href="./create.php">Create Job</a></h1>
 		</header>
-        <h1>Edit Job</h1>
-        <?php
-        $id = $_GET['id'];
-        $db = new mysqli("localhost", "root", "", "devriX");
-        $result = $db->query("SELECT * FROM jobs WHERE id = {$id}");
-        $job = $result->fetch_all(MYSQLI_ASSOC)[0];
-        echo "
-        <form id='edit-form' action=./editJob.php method='post'>
-            <label for='title'>Title: </label>
-            <input type='text' id='title' name='title' value=$job[title]>
-            <label for='description'>Description: </label>
-            <textarea name='description' id='description' cols=30 rows=10>$job[description]</textarea>
-            <label for='company'>Company: </label>
-            <input type='text' id='company' name='company' value=$job[company]>
-            <label for='salary'>Salary: </label>
-            <input type='number' id='salary' name='salary' value=$job[salary]>
-            <input type='hidden' name='id' value=$id>
-            <input type='submit' value='Edit' id='editBtn'>
-        </form>"
-        ?>
+        <h1>Create offer</h1>
+        <form id="create-form" action="./createJob.php" method="post">
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title">
+            <label for="description">Description: </label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <label for="company">Company: </label>
+            <input type="text" id="company" name="company">
+            <label for="salary">Salary: </label>
+            <input type="number" id="salary" name="salary">
+            <input type="submit" value="Edit" id="createBtn">
+        </form>
 		<footer class="site-footer">
 			<p>Copyright 2020 | Developer links: 
 				<a href="./admin.php">Admin</a>,

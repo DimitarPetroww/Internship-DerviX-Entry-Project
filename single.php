@@ -14,6 +14,7 @@
 	<div class="site-wrapper">
 		<header class="site-header">
 			<h2 class="site-title"><a href="./index.php">Job Offers</a></h2>
+			<h2 class="site-title"><a href="./create.php">Create Job</a></h2>
 		</header>
 
 		<div class="job-single">
