@@ -36,7 +36,6 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
 /* Grouping content
    ========================================================================== */
 /**
@@ -141,6 +140,7 @@ sup {
 img {
   border-style: none;
 }
+
 
 /* Forms
    ========================================================================== */
@@ -499,7 +499,6 @@ a {
 .button-wide {
   width: 100%;
 }
-
 @media (max-width: 960px) {
   .job-single {
     flex-direction: column;
