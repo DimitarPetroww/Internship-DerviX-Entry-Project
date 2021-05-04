@@ -15,7 +15,7 @@ Very simple PHP application for an internship DevriX program
 2. Go to XAMPP location in your file system (default path is C:\xampp)
 3. Open htdocs folder located in xampp
 4. Paste the repo and rename it as "jobs"
-5. Open your IDE and type npm install in terminal
+5. Open your IDE and install requirements
 6. Start your Apache server trough XAMPP control panel
 7. Start MySQL from XAMPP control panel
 8. Open browser and go to "http://localhost/jobs/index.php"
